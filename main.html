@@ -1,20 +1,46 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Navbar & Audios</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-	<h1>What is the captial of India?</h1>
-	<input type="radio" id="new_delhi" name="option">
-	<label for="new_delhi">New Delhi</label>
-</br>
-	<input type="radio" id="mumbai" name="option">
-	<label for="mumbai">Mumbai</label>
-	<blockquote id="blockquote" cite="https://en.wikipedia.org/wiki/New_Delhi">New Delhi is the capital of India and an administrative district of NCT Delhi.</blockquote>
+    <!-- ✅ Semantic Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#audio_1">Audio 1</a></li>
+            <li><a href="#audio_2">Audio 2</a></li>
+            <li><a href="#audio_3">Audio 3</a></li>
+        </ul>
+    </nav>
+
+    <!-- ✅ Audio Section -->
+    <section>
+        <h1>3 random audios</h1>
+
+        <h3>Music 1: The Neverwritten Role Playing Game</h3>
+        <audio controls id="audio_1" src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3">
+            <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h3>Music 2: Lepidoptera</h3>
+        <audio controls id="audio_2" src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg">
+            <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h3>Music 3: Paza - Moduless</h3>
+        <audio controls id="audio_3" src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3">
+            <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
 
 </body>
 
